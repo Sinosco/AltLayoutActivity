@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="500dp"
+        android:layout_height="455dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="198dp"
+        android:layout_height="90dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_photo"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/directReportsRecyclerView"
+        tools:layout_editor_absoluteX="931dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLabel"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="927dp"
+        tools:text="Email Address" />
+
+    <TextView
+        android:id="@+id/extension"
+        android:layout_width="317dp"
+        android:layout_height="115dp"
+        android:layout_marginBottom="60dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extensionLabel"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="500dp"
+        tools:text="Extension" />
+
+    <TextView
+        android:id="@+id/extensionLabel"
+        android:layout_width="136dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="32dp"
+        android:paddingTop="8dp"
+        android:text="Extension"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685"
+        tools:layout_editor_absoluteX="500dp" />
+
+    <TextView
+        android:id="@+id/departmentLabel"
+        android:layout_width="150dp"
+        android:layout_height="57dp"
+        android:paddingTop="8dp"
+        android:text="Department"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departmentLabel"
+        tools:text="Department name" />
+
+    <TextView
+        android:id="@+id/supervisorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Supervisor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
+        tools:layout_editor_absoluteX="1382dp" />
+
+    <TextView
+        android:id="@+id/supervisor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supervisorLabel"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="1382dp"
+        tools:text="Supervisor\'s Name" />
+
+    <TextView
+        android:id="@+id/directReportsLabel"
+        android:layout_width="153dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="424dp"
+        android:layout_marginBottom="4dp"
+        android:paddingTop="8dp"
+        android:text="Direct Reports"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/directReportsRecyclerView"
+        app:layout_constraintStart_toEndOf="@+id/profile_photo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/directReportsRecyclerView"
+        android:layout_width="353dp"
+        android:layout_height="336dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_photo"
+        tools:layout_editor_absoluteY="119dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
