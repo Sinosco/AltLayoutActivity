@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FancyScreen</string>
+    <string name="name">Nom</string>
+    <string name="email">E-mail</string>
+    <string name="emailAddress">Adresse e-mail</string>
+    <string name="extTitle">Poste</string>
+    <string name="ext">Poste</string>
+    <string name="departmentTitle">Service</string>
+    <string name="department">Nom du service</string>
+    <string name="supervisorTitle">Responsable</string>
+    <string name="supervisor">Nom du responsable</string>
+    <string name="report">Subordonnés directs</string>
+
+</resources>
